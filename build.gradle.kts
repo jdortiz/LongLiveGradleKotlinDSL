@@ -2,6 +2,12 @@
 
 buildscript {
     val kotlinVersion: String by extra { "1.2.71" }
+    @Suppress("UNUSED_VARIABLE")
+    val versions: Map<String, String> by extra { mapOf("appcompat" to "28.0.0",
+        "constraintLayout" to "1.1.3",
+        "junit" to "4.12",
+        "supportTest" to "1.0.2",
+        "espresso" to "3.0.2") }
     repositories {
         google()
         jcenter()
