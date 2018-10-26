@@ -27,8 +27,9 @@ allprojects {
     }
 }
 
-/*
-task clean(type: Delete) {
-    delete rootProject.buildDir
+tasks {
+    @Suppress("UNUSED_VARIABLE")
+    val clean by creating(Delete::class) {
+        delete(rootProject.buildDir)
+    }
 }
-*/
